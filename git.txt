@@ -1,0 +1,230 @@
+namem@Name MINGW32 ~
+$ cd e:
+
+namem@Name MINGW32 /e
+$ cd decktop/
+bash: cd: decktop/: No such file or directory
+
+namem@Name MINGW32 /e
+$ dektop
+bash: dektop: command not found
+
+namem@Name MINGW32 /e
+$ cd dektop/
+
+namem@Name MINGW32 /e/dektop
+$ mkdir new-repo
+
+namem@Name MINGW32 /e/dektop
+$ cd new-repo/
+
+namem@Name MINGW32 /e/dektop/new-repo
+$ git init
+Initialized empty Git repository in E:/dektop/new-repo/.git/
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ touch index.html
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ ls
+index.html
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ touch styles.css
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ ls
+index.html  styles.css
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git add index.html
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        styles.css
+
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git commit -m "add a file"
+[master (root-commit) 8da4265] add a file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git log
+commit 8da4265cef17d2fee32e2f7c53a0cf1b197b9b83 (HEAD -> master)
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 12:16:38 2023 +0530
+
+    add a file
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git aadd styles.css
+git: 'aadd' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git add styles.css
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git commit -m "added a file"
+[master 7e4d5d1] added a file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 styles.css
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git log
+commit 7e4d5d14e46fe6fbedc97ed10ce9ccb6c5fc3ea0 (HEAD -> master)
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 12:19:32 2023 +0530
+
+    added a file
+
+commit 8da4265cef17d2fee32e2f7c53a0cf1b197b9b83
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 12:16:38 2023 +0530
+
+    add a file
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ touch new-file.js
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ touch header.component.ksx
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ touch header.component.jsx
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        header.component.jsx
+        header.component.ksx
+        new-file.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git add .
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   header.component.jsx
+        new file:   header.component.ksx
+        new file:   new-file.js
+
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git commit -m "add the file"
+[master 8005fd5] add the file
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 header.component.jsx
+ create mode 100644 header.component.ksx
+ create mode 100644 new-file.js
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git log
+commit 8005fd5d78cc8809192b994f4477023be5ac6eca (HEAD -> master)
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 12:23:47 2023 +0530
+
+    add the file
+
+commit 7e4d5d14e46fe6fbedc97ed10ce9ccb6c5fc3ea0
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 12:19:32 2023 +0530
+
+    added a file
+
+commit 8da4265cef17d2fee32e2f7c53a0cf1b197b9b83
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 12:16:38 2023 +0530
+
+    add a file
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ touch randoom.js
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        randoom.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git add randoom.js
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   randoom.js
+
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git log
+commit 8005fd5d78cc8809192b994f4477023be5ac6eca (HEAD -> master)
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 12:23:47 2023 +0530
+
+    add the file
+
+commit 7e4d5d14e46fe6fbedc97ed10ce9ccb6c5fc3ea0
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 12:19:32 2023 +0530
+
+    added a file
+
+commit 8da4265cef17d2fee32e2f7c53a0cf1b197b9b83
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 12:16:38 2023 +0530
+
+    add a file

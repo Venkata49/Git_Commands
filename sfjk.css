@@ -1,0 +1,35 @@
+main{
+    width: 15rem;
+    height: 15rem;
+    background: radial-gradient(circle at 30% 107%,#fdf497 0%, #fdf497 5%,
+     #fd5949 45%, #d6249f 60%, #285aeb 90%);
+     box-shadow: 0px 3px 10px rgba(0,0, 0,0.25);
+     border-radius: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+#outer-layer{
+    width: 9.9rem;
+    height: 9.9rem;
+    border: 0.9rem solid#ffffff;
+    border-radius: 35px;
+    position: absolute;
+}
+#inner-layer{
+    width: 4rem;
+    height: 4rem;
+    border: 0.9rem solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+}
+#inner-layer::before{
+    content: " ";
+    height: 1.6rem;
+    width: 1.6rem;
+    background: #ffffff;
+    position: absolute;
+    top: -48%;
+    right: -48%;
+    border-radius: 50%;
+}

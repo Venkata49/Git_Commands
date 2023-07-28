@@ -1,0 +1,77 @@
+namem@Name MINGW32 /e
+$ git clone https://github.com/Venkata49/git-start.git
+Cloning into 'git-start'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 9 (delta 1), reused 8 (delta 0), pack-reused 0
+Receiving objects: 100% (9/9), done.
+Resolving deltas: 100% (1/1), done.
+
+namem@Name MINGW32 /e
+$ cd dektop
+
+namem@Name MINGW32 /e/dektop
+$ git clone https://github.com/Venkata49/git-start.git
+Cloning into 'git-start'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 9 (delta 1), reused 8 (delta 0), pack-reused 0
+Receiving objects: 100% (9/9), done.
+Resolving deltas: 100% (1/1), done.
+
+namem@Name MINGW32 /e/dektop
+$ ls
+git-start/
+
+namem@Name MINGW32 /e/dektop
+$ cd git-start
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ ls
+index.html
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ git log
+commit 610f8ae4d3d4b828f8e3f4829d1dc7467291c729 (HEAD -> master, origin/master, origin/HEAD)
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 15:56:59 2023 +0530
+
+    Added a file
+
+commit a3f6d204b80dfd3ed2612118d7ceef95072277dd
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 15:42:31 2023 +0530
+
+    add a file
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ git switch styles
+Switched to a new branch 'styles'
+branch 'styles' set up to track 'origin/styles'.
+
+namem@Name MINGW32 /e/dektop/git-start (styles)
+$ git log
+commit 5bab003594bb3f3b453c78b5d326ef31430c3fb1 (HEAD -> styles, origin/styles)
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 15:51:32 2023 +0530
+
+    file added
+
+commit a3f6d204b80dfd3ed2612118d7ceef95072277dd
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 15:42:31 2023 +0530
+
+    add a file
+
+namem@Name MINGW32 /e/dektop/git-start (styles)
+$ ls
+index.html  style.css
+
+namem@Name MINGW32 /e/dektop/git-start (styles)
+$ git branch
+  master
+* styles
+
+namem@Name MINGW32 /e/dektop/git-start (styles)

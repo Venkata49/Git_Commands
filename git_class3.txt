@@ -1,0 +1,66 @@
+namem@Name MINGW32 /e/dektop/new-collect (react)
+$ git branch
+  js
+  master
+* react
+  styling
+
+namem@Name MINGW32 /e/dektop/new-collect (react)
+$ git switch master
+error: Your local changes to the following files would be overwritten by checkout:
+        app.js
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+namem@Name MINGW32 /e/dektop/new-collect (react)
+$ git add app.js
+
+namem@Name MINGW32 /e/dektop/new-collect (react)
+$ git commit -m "commit "
+[react af6a40d] commit
+ 1 file changed, 4 insertions(+)
+
+namem@Name MINGW32 /e/dektop/new-collect (react)
+$ git switch master
+Switched to branch 'master'
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git branch -d js
+error: The branch 'js' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D js'.
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git branch -D js
+Deleted branch js (was dda549c).
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git branch
+* master
+  react
+  styling
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git branch styling
+fatal: a branch named 'styling' already exists
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git switch syling
+fatal: invalid reference: syling
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git switch styling
+Switched to branch 'styling'
+
+namem@Name MINGW32 /e/dektop/new-collect (styling)
+$ git status
+On branch styling
+nothing to commit, working tree clean
+
+namem@Name MINGW32 /e/dektop/new-collect (styling)
+$ git branch -m scrpting
+
+namem@Name MINGW32 /e/dektop/new-collect (scrpting)
+$ git branch
+  master
+  react
+* scrpting

@@ -1,0 +1,154 @@
+namem@Name MINGW32 ~
+$ cd e:/dektop
+
+namem@Name MINGW32 /e/dektop
+$ cd git-start
+bash: cd: git-start: No such file or directory
+
+namem@Name MINGW32 /e/dektop
+$ mkdir git-start
+
+namem@Name MINGW32 /e/dektop
+$ cd git-star
+bash: cd: git-star: No such file or directory
+
+namem@Name MINGW32 /e/dektop
+$ git init
+Initialized empty Git repository in E:/dektop/.git/
+
+namem@Name MINGW32 /e/dektop (master)
+$ cd git-start
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ git init
+Initialized empty Git repository in E:/dektop/git-start/.git/
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ touch index.html
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ ls
+index.html
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ git add index.html
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ git commit -m "add a file"
+[master (root-commit) a3f6d20] add a file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ git remote -v
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ git remote add origin https://github.com/Venkata49/git-start.git
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ git remote -v
+origin  https://github.com/Venkata49/git-start.git (fetch)
+origin  https://github.com/Venkata49/git-start.git (push)
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 211 bytes | 211.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Venkata49/git-start.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ code .
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ git branch styles
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ git switch styles
+Switched to branch 'styles'
+
+namem@Name MINGW32 /e/dektop/git-start (styles)
+$ git add style.css
+
+namem@Name MINGW32 /e/dektop/git-start (styles)
+$ git commit -m "file added"
+[styles 5bab003] file added
+ 1 file changed, 5 insertions(+)
+ create mode 100644 style.css
+
+namem@Name MINGW32 /e/dektop/git-start (styles)
+$ git push origin styles
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 318 bytes | 2.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'styles' on GitHub by visiting:
+remote:      https://github.com/Venkata49/git-start/pull/new/styles
+remote:
+To https://github.com/Venkata49/git-start.git
+ * [new branch]      styles -> styles
+
+namem@Name MINGW32 /e/dektop/git-start (styles)
+$ git switch master
+Switched to branch 'master'
+M       index.html
+Your branch is up to date with 'origin/master'.
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ git add index.html
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ git commit -m "Added a file"
+[master 610f8ae] Added a file
+ 1 file changed, 11 insertions(+)
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ git push origim master
+fatal: 'origim' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+namem@Name MINGW32 /e/dektop/git-start (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 386 bytes | 386.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Venkata49/git-start.git
+   a3f6d20..610f8ae  master -> master
+branch 'master' set up to track 'origin/master'.
+
+namem@Name MINGW32 /e/dektop/git-start (master)

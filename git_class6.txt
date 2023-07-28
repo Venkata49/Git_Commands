@@ -1,0 +1,59 @@
+namem@Name MINGW32 /e/dektop/git-start (styles)
+$ ls
+index.html  style.css
+
+namem@Name MINGW32 /e/dektop/git-start (styles)
+$ git status
+On branch styles
+Your branch is up to date with 'origin/styles'.
+
+nothing to commit, working tree clean
+
+namem@Name MINGW32 /e/dektop/git-start (styles)
+$ git checkout origin/styles
+Note: switching to 'origin/styles'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 5bab003 file added
+
+namem@Name MINGW32 /e/dektop/git-start ((5bab003...))
+$ ls
+index.html  style.css
+
+namem@Name MINGW32 /e/dektop/git-start ((5bab003...))
+$ cat style.css
+*{
+  padding: 0;
+  margin: 0;
+  color: blueviolet;
+}
+namem@Name MINGW32 /e/dektop/git-start ((5bab003...))
+$ git checkout styles
+Switched to branch 'styles'
+Your branch is up to date with 'origin/styles'.
+
+namem@Name MINGW32 /e/dektop/git-start (styles)
+$ ls
+index.html  style.css
+
+namem@Name MINGW32 /e/dektop/git-start (styles)
+$ git pull origin styles
+From https://github.com/Venkata49/git-start
+ * branch            styles     -> FETCH_HEAD
+Already up to date.
+
+namem@Name MINGW32 /e/dektop/git-start (styles)

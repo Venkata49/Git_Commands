@@ -1,0 +1,225 @@
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ git branch
+* master
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ cd new-collect
+bash: cd: new-collect: No such file or directory
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ cd dektop
+bash: cd: dektop: No such file or directory
+
+namem@Name MINGW32 /e/dektop/new-repo (master)
+$ cd e:
+
+namem@Name MINGW32 /e
+$ cd dektop
+
+namem@Name MINGW32 /e/dektop
+$ mkdir new-collect
+
+namem@Name MINGW32 /e/dektop
+$ cd new-collect
+
+namem@Name MINGW32 /e/dektop/new-collect
+$ git init
+Initialized empty Git repository in E:/dektop/new-collect/.git/
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ code .
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git add index.html
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git commit -m "add file"
+[master (root-commit) 63ff2ee] add file
+ 1 file changed, 10 insertions(+)
+ create mode 100644 index.html
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git log
+commit 63ff2ee9ebf88ac17398737de40d1de7d99770fd (HEAD -> master)
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 13:12:55 2023 +0530
+
+    add file
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git branch
+* master
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git branch styling
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git branch
+* master
+  styling
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git switch
+fatal: missing branch or commit argument
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git switch styling
+Switched to branch 'styling'
+
+namem@Name MINGW32 /e/dektop/new-collect (styling)
+$ git branch
+  master
+* styling
+
+namem@Name MINGW32 /e/dektop/new-collect (styling)
+$ git status
+On branch styling
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+namem@Name MINGW32 /e/dektop/new-collect (styling)
+$ git add style.css
+
+namem@Name MINGW32 /e/dektop/new-collect (styling)
+$ git commit -m "add style.css"
+[styling e9e9c7c] add style.css
+ 1 file changed, 5 insertions(+)
+ create mode 100644 style.css
+
+namem@Name MINGW32 /e/dektop/new-collect (styling)
+$ git log
+commit e9e9c7c593bef985fcdd82ed2255c2cbf12e2c66 (HEAD -> styling)
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 13:17:14 2023 +0530
+
+    add style.css
+
+commit 63ff2ee9ebf88ac17398737de40d1de7d99770fd (master)
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 13:12:55 2023 +0530
+
+    add file
+
+namem@Name MINGW32 /e/dektop/new-collect (styling)
+$ git switch master
+Switched to branch 'master'
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git switch styling
+Switched to branch 'styling'
+
+namem@Name MINGW32 /e/dektop/new-collect (styling)
+$ git branch js
+
+namem@Name MINGW32 /e/dektop/new-collect (styling)
+$ git switch js
+Switched to branch 'js'
+
+namem@Name MINGW32 /e/dektop/new-collect (js)
+$ git status
+On branch js
+nothing to commit, working tree clean
+
+namem@Name MINGW32 /e/dektop/new-collect (js)
+$ git add app.js
+
+namem@Name MINGW32 /e/dektop/new-collect (js)
+$ git commit -m "add file"
+[js dda549c] add file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 app.js
+
+namem@Name MINGW32 /e/dektop/new-collect (js)
+$ git log
+commit dda549cdeac123a0989d74de01bacbb68c04d561 (HEAD -> js)
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 13:22:59 2023 +0530
+
+    add file
+
+commit e9e9c7c593bef985fcdd82ed2255c2cbf12e2c66 (styling)
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 13:17:14 2023 +0530
+
+    add style.css
+
+commit 63ff2ee9ebf88ac17398737de40d1de7d99770fd (master)
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 13:12:55 2023 +0530
+
+    add file
+
+namem@Name MINGW32 /e/dektop/new-collect (js)
+$ git switch master
+Switched to branch 'master'
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git siwtch styling
+git: 'siwtch' is not a git command. See 'git --help'.
+
+The most similar command is
+        switch
+
+namem@Name MINGW32 /e/dektop/new-collect (master)
+$ git switch styling
+Switched to branch 'styling'
+
+namem@Name MINGW32 /e/dektop/new-collect (styling)
+$ git switch js
+Switched to branch 'js'
+
+namem@Name MINGW32 /e/dektop/new-collect (js)
+$ git switch -c react
+Switched to a new branch 'react'
+
+namem@Name MINGW32 /e/dektop/new-collect (react)
+$ git branch
+  js
+  master
+* react
+  styling
+
+namem@Name MINGW32 /e/dektop/new-collect (react)
+$ git log
+commit dda549cdeac123a0989d74de01bacbb68c04d561 (HEAD -> react, js)
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 13:22:59 2023 +0530
+
+    add file
+
+commit e9e9c7c593bef985fcdd82ed2255c2cbf12e2c66 (styling)
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 13:17:14 2023 +0530
+
+    add style.css
+
+commit 63ff2ee9ebf88ac17398737de40d1de7d99770fd (master)
+Author: venkata49 <vvkumar207@gmail.com>
+Date:   Thu Jul 27 13:12:55 2023 +0530
+
+    add file
+
+namem@Name MINGW32 /e/dektop/new-collect (react)
